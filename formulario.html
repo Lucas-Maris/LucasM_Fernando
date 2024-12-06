@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body class="bg-white">
+
+    <header class="blog-header py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger rounded">
+            <a class="navbar-brand" href="#">Pizzaria Mamma-Mia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+                aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapsenavbar-collapse" id="conteudoNavbarSuportado">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">
+                            Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cardapio.html">
+                            Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tabela.html">
+                            Horários</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="formulario.html">
+                            Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+      </header>
+      
+    <div class="container bg-warning mt-5 rounded p-3">
+
+        <div class="row">
+            <div class="col">
+                <h1>Formulário para Contato</h1>
+                <form action="arquivo.php" method="post">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="nome">Nome:</label>
+                            <input id="nome" class="form-control" type="text" required />
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="curso">Sobrenome:</label>
+                            <input id="sobrenome" class="form-control" type="text" required />
+                        </div>
+                    </div>
+                </form>
+
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">E-mail</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Telefone</label>
+                            <input type="text" class="form-control" id="celular" placeholder="(14) 00000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Endereço</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Dúvidas ou Sugestões</label>
+                        <input type="text" class="form-control" id="input_perguntas"
+                            placeholder="Digite aqui sua Dúvida ou Feedback." required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Cidade</label>
+                            <input type="text" class="form-control" id="inputCity" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEstado">Estado</label>
+                            <select id="inputEstado" class="form-control" required>
+                                <option selected>Escolher...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputCEP">CEP</label>
+                            <input type="text" class="form-control" id="inputCEP" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Aceitar termos e Condições
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Entrar</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        Pizzaria Mamma-Mia
+        <!--endereço da instituiçao-->
+        <adress>
+            Rua José Alfredo, 69
+            - Jaú - <abbr title="São Paulo - Brasil">SP</abbr>
+        </adress>
+    </footer>
+</body>
+
+
+
+</html>
